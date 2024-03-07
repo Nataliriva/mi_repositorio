@@ -1,0 +1,148 @@
+@charset "UTF-8";
+.resaltar {
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: none;
+  color: indigo;
+}
+
+.lista {
+  display: grid;
+  grid-template-columns: repeat(20, 10fr);
+  grid-template-rows: 40px;
+  text-decoration: underline;
+  color: rgb(21, 39, 54);
+  justify-items: end;
+}
+
+header ul {
+  display: flex;
+  gap: 30px;
+}
+
+.des {
+  color: black;
+  text-align: center;
+}
+
+.todo {
+  width: 80%; /* Ancho del contenedor principal */
+  max-width: 1200px; /* Ancho máximo para pantallas grandes */
+  margin: auto; /* Centrar horizontalmente */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Centrar verticalmente */
+}
+
+.imagen {
+  max-width: 100%; /* para  que la imagen no se desborde */
+  height: auto;
+  margin: 20px 0; /* Ajustamos el margen */
+}
+
+h2 {
+  color: indigo;
+  text-align: center;
+  margin: 20px 0; /* Ajustamos el margen */
+}
+
+.logo_whatsapp {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+  position: fixed; /* Mantenemos la posición fija */
+  right: 10px; /* Ajustamos la posición */
+  bottom: 10px; /* Ajustamos la posición */
+}
+
+/*Estilo de pantalla con media*/
+@media (max-width: 350px) {
+  .todo {
+    width: 100%; /* Ajustamos el ancho */
+    padding: 0 20px; /* Añadimos relleno a los lados */
+  }
+  .lista {
+    justify-content: center; /* Centramos horizontalmente la lista */
+  }
+  .imagen {
+    width: 100%; /*la imagen ocupe todo el ancho disponible */
+  }
+}
+/* Apartir de aca comienza la pagina de Producto*/
+@media (max-width: 350px) {
+  .productolis {
+    width: 1700%; /* Ancho del contenedor principal */
+    max-width: 1700%; /* Ancho máximo para pantallas grandes */
+    margin: auto; /* Centrar horizontalmente */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: top;
+    align-items: top;
+    height: 170%; /* Centrar verticalmente */
+    margin-top: -200px; /*Para subir o bajar elementos*/
+  }
+}
+.colortitulo {
+  color: blueviolet;
+}
+
+.imagenproducto {
+  width: 400px;
+  height: 400px;
+  text-decoration: none;
+  color: rgb(21, 39, 54);
+  justify-items: top;
+  margin-top: -120px;
+}
+
+/* Apartir de aca comienza la pagina de Contacto*/
+.contactobody {
+  background-color: rgb(165, 187, 228);
+}
+
+.titulocontacto {
+  color: indigo;
+}
+
+.cuerpo {
+  width: 100%; /* Cambiado a 100% para ocupar todo el ancho del contenedor principal */
+  max-width: 1200px; /* Ancho máximo para pantallas grandes */
+  margin: auto; /* Centrar horizontalmente */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Centrar verticalmente */
+}
+
+.contactofooter {
+  text-align: center;
+  text-decoration: none;
+  color: indigo;
+  margin-top: 50px; /* colocamos un margen superior para separar el pie de página del resto del contenido */
+}
+
+@media (max-width: 350px) {
+  .cuerpo {
+    padding: 0 20px; /* Añadido relleno a los lados para evitar que el contenido se pegue al borde de la pantalla */
+  }
+}
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente los elementos del formulario */
+  justify-content: center; /* Centra verticalmente los elementos del formulario */
+  height: 100%; /* Ajusta la altura del contenedor para ocupar todo el espacio disponible */
+}
+
+form {
+  width: 80%; /* Ajusta el ancho del formulario  */
+  max-width: 500px; /* Ancho máximo del formulario para evitar que se vuelva demasiado ancho en pantallas grandes */
+}
+
+/*# sourceMappingURL=styles.css.map */

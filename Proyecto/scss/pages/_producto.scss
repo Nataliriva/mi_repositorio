@@ -1,0 +1,28 @@
+/* Apartir de aca comienza la pagina de Producto*/
+@media(max-width: 350px){
+.productolis
+{
+    width: 1700%; /* Ancho del contenedor principal */
+    max-width: 1700%; /* Ancho máximo para pantallas grandes */
+    margin:auto; /* Centrar horizontalmente */
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content:top;
+    align-items:top;
+    height: 170%; /* Centrar verticalmente */  
+    margin-top: -200px; /*Para subir o bajar elementos*/
+}}
+.colortitulo{
+    color: blueviolet;
+}
+
+.imagenproducto{
+    width: 400px;
+    height: 400px;
+    text-decoration: none;
+    color: rgb(21, 39, 54);
+    justify-items: top;
+    margin-top: -120px;
+
+}
+

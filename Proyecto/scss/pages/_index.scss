@@ -1,0 +1,77 @@
+.resaltar {
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: none;
+    color: indigo;
+}
+
+.lista {
+    display: grid;
+    grid-template-columns: repeat(20, 10fr);
+    grid-template-rows: 40px;
+    text-decoration: underline;
+    color: rgb(21, 39, 54);
+    justify-items: end;
+}
+
+header ul {
+    display: flex;
+    gap: 30px;
+}
+
+.des {
+    color: black;
+    text-align: center;
+}
+
+.todo {
+    width: 80%; /* Ancho del contenedor principal */
+    max-width: 1200px; /* Ancho máximo para pantallas grandes */
+    margin: auto; /* Centrar horizontalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Centrar verticalmente */
+}
+
+.imagen {
+    max-width: 100%; /* para  que la imagen no se desborde */
+    height: auto;
+    margin: 20px 0; /* Ajustamos el margen */
+}
+
+h2 {
+    color: indigo;
+    text-align: center;
+    margin: 20px 0; /* Ajustamos el margen */
+}
+
+.logo_whatsapp {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    position: fixed; /* Mantenemos la posición fija */
+    right: 10px; /* Ajustamos la posición */
+    bottom: 10px; /* Ajustamos la posición */
+}
+
+/*Estilo de pantalla con media*/      
+
+@media (max-width: 350px) {  
+.todo {
+        width: 100%; /* Ajustamos el ancho */
+        padding: 0 20px; /* Añadimos relleno a los lados */
+    }
+
+    .lista {
+        justify-content: center; /* Centramos horizontalmente la lista */
+    }
+
+    .imagen {
+        width: 100%; /*la imagen ocupe todo el ancho disponible */
+    }
+}
