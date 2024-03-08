@@ -73,31 +73,68 @@ h2 {
     width: 100%; /*la imagen ocupe todo el ancho disponible */
   }
 }
-/* Apartir de aca comienza la pagina de Producto*/
-@media (max-width: 350px) {
-  .productolis {
-    width: 1700%; /* Ancho del contenedor principal */
-    max-width: 1700%; /* Ancho máximo para pantallas grandes */
-    margin: auto; /* Centrar horizontalmente */
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: top;
-    align-items: top;
-    height: 170%; /* Centrar verticalmente */
-    margin-top: -200px; /*Para subir o bajar elementos*/
-  }
-}
-.colortitulo {
-  color: blueviolet;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.imagenproducto {
-  width: 400px;
-  height: 400px;
+a {
   text-decoration: none;
-  color: rgb(21, 39, 54);
-  justify-items: top;
-  margin-top: -120px;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+header {
+  background-color: antiquewhite;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header header nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.listaproducto {
+  background-color: navajowhite;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between; /* Añadir punto y coma aquí */
+  align-items: center; /* Añadir punto y coma aquí */
+}
+
+.portada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.cajadeproductos {
+  display: flex;
+}
+.cajadeproductos .zinc {
+  border: 2px;
+  max-width: 280px;
+  min-height: 320px;
+  display: flex; /* Debes aplicar display: flex; a .zinc para que funcione */
+}
+.cajadeproductos .zinc img {
+  width: 100%;
+  height: 180px;
+}
+.cajadeproductos .zinc div {
+  border-top: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 /* Apartir de aca comienza la pagina de Contacto*/
