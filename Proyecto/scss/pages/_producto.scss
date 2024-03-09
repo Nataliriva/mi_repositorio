@@ -1,11 +1,10 @@
-
 *{
     margin: 0;
     padding: 0;
     box-sizing:border-box;
     font-family: Arial, Helvetica, sans-serif;
-  
   }
+
   a{text-decoration: none;}
   
   ul,
@@ -13,32 +12,44 @@
     list-style: none;
   }
   
-  header{
-    background-color: antiquewhite;
+.bodyproducto{
+    background-color:cornflowerblue;
+}
+
+.boton {
+    background-color:darkslateblue;
+    padding: 0.8rem 1rem;
+    border: 2px solid black;
+    border-radius: 50px;
+    color: aliceblue;
+}
+
+.principal header{
+    background-color:blanchedalmond;
     padding: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
+}
+    
+.hederli{
+  display: grid;
+  grid-template-columns: repeat(20, 10fr);
+  grid-template-rows: 40px;
+  text-decoration:black;
+  color:blanchedalmond;
+  justify-items:center;
+  padding: 1rem;
 
-    header nav ul{
-        display: flex;
-        gap: 1rem;
     }
 
-  }
+  
 
 
-
-
-.listaproducto {
-    background-color:navajowhite;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between; /* Añadir punto y coma aquí */
-    align-items: center; /* Añadir punto y coma aquí */
+  
+    
 
     
-}
 
 //*Portada//*
 .portada{
@@ -46,16 +57,45 @@
     justify-content: center;
     align-items: center;
     min-height: 80vh;
+    img{
+        width: 40%;
+
+    }
+    div{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+    }
 }
+
+
+//*Producto*//
 
 .cajadeproductos {
     display: flex;
 
+    h2{
+        background-color:aliceblue;
+        text-align:start;
+        padding: 1rem;
+
+    }
+    
+    h3{
+       
+        padding: 1rem;
+        text-align:center;
+        color: aliceblue;
+    }
+
     .zinc {
-        border: 2px;
-        max-width: 280px;
-        min-height: 320px;
-        display: flex; /* Debes aplicar display: flex; a .zinc para que funcione */
+        border: 2px ;
+        max-width: 390px;
+        min-height: 350px;
+        display: flex; 
+        overflow: hidden;
 
         img {
             width: 100%;
@@ -63,11 +103,19 @@
         }
 
         div {
-            border-top: 2px;
+            border-top: 2px ;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 2rem;
+            gap:1.5rem;
         }
     }
 }
+.todos-productos{
+    display: flex;
+    overflow:auto;
+    padding: 1rem;
+    gap: 1rem;
+    
+}
+
