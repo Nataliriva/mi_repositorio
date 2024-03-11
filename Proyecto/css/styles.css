@@ -19,7 +19,6 @@
 h1 {
   text-align: center;
   text-decoration: none;
-  color: indigo;
 }
 
 .fondo {
@@ -60,7 +59,6 @@ header ul {
   margin: 20px 0; /* Ajustamos el margen */
 }
 .todo h2 {
-  color: indigo;
   text-align: center;
   margin: 20px 0; /* Ajustamos el margen */
 }
@@ -77,7 +75,7 @@ header ul {
 /*Estilo de pantalla con media*/
 @media (min-width: 1200px) {
   .todo {
-    padding: 0 100px; /* Por ejemplo, establece un relleno mayor en pantallas muy grandes */
+    padding: 0 100px; /* relleno mayor en pantallas muy grandes */
   }
 }
 @media (max-width: 350px) {
@@ -127,7 +125,7 @@ ol {
   min-height: 80vh;
 }
 .portada img {
-  width: 40%;
+  width: 50%;
 }
 .portada div {
   width: 40%;
@@ -142,25 +140,29 @@ ol {
   flex-wrap: wrap;
 }
 .cajadeproductos h2 {
-  background-color: aliceblue;
-  text-align: start;
-  padding: 1rem;
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem;
 }
 .cajadeproductos h3 {
-  padding: 1rem;
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  color: aliceblue;
+  padding: 3rem;
 }
 .cajadeproductos .zinc {
-  border: 2px;
-  max-width: 390px;
-  min-height: 350px;
-  display: flex;
-  overflow: hidden;
+  width: 135%;
+  justify-content: top;
 }
 .cajadeproductos .zinc img {
   width: 100%;
   height: 180px;
+  display: flex;
 }
 .cajadeproductos .zinc div {
   border-top: 2px;
@@ -199,10 +201,6 @@ ol {
 /* Apartir de aca comienza la pagina de Contacto*/
 .contactobody {
   background-color: rgb(165, 187, 228);
-}
-
-.titulocontacto {
-  color: indigo;
 }
 
 .cuerpo {
@@ -261,12 +259,15 @@ ol {
 
 .portada {
   display: flex;
-  justify-content: center;
   align-items: center;
   min-height: 80vh;
 }
-.portada img {
-  width: 40%;
+.portada .imagenzeta {
+  width: 135%;
+  justify-content: top;
+}
+.portada .Imagenchapa {
+  width: 85%;
 }
 .portada div {
   width: 40%;

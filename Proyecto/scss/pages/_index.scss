@@ -2,10 +2,12 @@
     color: black;
 }
 
+$color_primario:indigo;
+
 h1 {
     text-align: center;
     text-decoration: none;
-    color: indigo;
+    $color_primario:indigo;
 }
 
 //body*//
@@ -49,7 +51,7 @@ header ul {
         margin: 20px 0; /* Ajustamos el margen */
     }
     h2 {
-        color: indigo;
+        $color_primario:indigo;
         text-align: center;
         margin: 20px 0; /* Ajustamos el margen */
     }
@@ -69,7 +71,7 @@ header ul {
 /*Estilo de pantalla con media*/      
 @media (min-width: 1200px) {
     .todo {
-        padding: 0 100px; /* Por ejemplo, establece un relleno mayor en pantallas muy grandes */
+        padding: 0 100px; /* relleno mayor en pantallas muy grandes */
     }
 }
 @media (max-width: 350px) {  
