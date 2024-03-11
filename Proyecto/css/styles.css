@@ -9,6 +9,10 @@ h1 {
   color: indigo;
 }
 
+.fondo {
+  background-color: cadetblue;
+}
+
 .lista {
   display: grid;
   grid-template-columns: repeat(20, 10fr);
@@ -138,6 +142,7 @@ ol {
 
 .cajadeproductos {
   display: flex;
+  flex-wrap: wrap;
 }
 .cajadeproductos h2 {
   background-color: aliceblue;
@@ -175,6 +180,29 @@ ol {
   gap: 1rem;
 }
 
+.footer-empresa {
+  text-align: center;
+}
+
+/* Media queries para hacer el diseño responsive */
+@media screen and (max-width: 768px) {
+  .portada img,
+  .portada div {
+    width: 80%;
+  }
+  .hederli {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 576px) {
+  .portada img,
+  .portada div {
+    width: 100%;
+  }
+  .hederli {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 /* Apartir de aca comienza la pagina de Contacto*/
 .contactobody {
   background-color: rgb(165, 187, 228);
@@ -266,7 +294,7 @@ heder-empresa {
 }
 
 .Historia {
-  text-align: start;
+  text-align: center;
   color: black;
   font-weight: 5px;
   gap: 1rem;
@@ -274,6 +302,35 @@ heder-empresa {
 
 .footer-empresa {
   text-align: center;
+  text-decoration: none;
+  color: indigo;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 350px) {
+  .portada {
+    flex-direction: column;
+  }
+  .portada img {
+    width: 80%;
+  }
+  .portada div {
+    width: 80%;
+  }
+  .Historia {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .portada img {
+    width: 100%;
+  }
+  .portada div {
+    width: 100%;
+  }
+  .Historia {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

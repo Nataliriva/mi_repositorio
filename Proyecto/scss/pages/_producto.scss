@@ -75,6 +75,7 @@
 
 .cajadeproductos {
     display: flex;
+    flex-wrap: wrap;
 
     h2{
         background-color:aliceblue;
@@ -119,3 +120,31 @@
     
 }
 
+.footer-empresa{
+    text-align: center;
+  
+  }
+  
+
+  /* Media queries para hacer el diseño responsive */
+@media screen and (max-width: 768px) {
+    .portada img,
+    .portada div {
+      width: 80%; 
+    }
+  
+    .hederli {
+      grid-template-columns: repeat(4, 1fr); 
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .portada img,
+    .portada div {
+      width: 100%; 
+    }
+  
+    .hederli {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }

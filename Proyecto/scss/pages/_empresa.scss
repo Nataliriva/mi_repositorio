@@ -43,13 +43,49 @@
 }
 
 .Historia{
-  text-align:start;
+  text-align:center;
   color: black;
   font-weight: 5px;
   gap: 1rem;
+  
 }
 
 .footer-empresa{
   text-align: center;
+    text-decoration: none;
+    color: indigo;
+    margin-top:50px;
+  }
 
+// Media queries para tamaños de pantalla específicos
+@media screen and (max-width: 350px) {
+  .portada {
+    flex-direction: column; // Cambia la dirección de los elementos en pantallas más pequeñas
+    img {
+      width: 80%; // Modifica el ancho de la imagen para pantallas más pequeñas
+    }
+    div {
+      width: 80%; // Modifica el ancho del contenedor de texto para pantallas más pequeñas
+    }
+  }
+  
+  .Historia {
+    font-size: 14px; // Modifica el tamaño de fuente para pantallas más pequeñas
+  }
 }
+
+@media screen and (max-width: 576px) {
+  .portada {
+    img {
+      width: 100%; // Modifica el ancho de la imagen para pantallas aún más pequeñas
+    }
+    div {
+      width: 100%; // Modifica el ancho del contenedor de texto para pantallas aún más pequeñas
+    }
+  }
+
+  .Historia {
+    font-size: 12px; // Modifica el tamaño de fuente para pantallas aún más pequeñas
+  }
+}
+
