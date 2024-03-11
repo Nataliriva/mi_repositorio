@@ -10,7 +10,7 @@ h1 {
 
 //body*//
 .fondo{
-    background-color:cadetblue;
+    background-color:cornflowerblue;
 
 }
 .lista {
@@ -27,10 +27,7 @@ header ul {
     gap: 30px;
 }
 
-.des {
-    color: black;
-    text-align: center;
-}
+
 
 .todo {
     width: 80%; /* Ancho del contenedor principal */
@@ -41,19 +38,23 @@ header ul {
     justify-content: center;
     align-items: center;
     height: 100%; /* Centrar verticalmente */
+
+    .des {
+        color: black;
+        text-align: center;
+    }
+    .imagen {
+        max-width: 100%; /* para  que la imagen no se desborde */
+        height: auto;
+        margin: 20px 0; /* Ajustamos el margen */
+    }
+    h2 {
+        color: indigo;
+        text-align: center;
+        margin: 20px 0; /* Ajustamos el margen */
+    }
 }
 
-.imagen {
-    max-width: 100%; /* para  que la imagen no se desborde */
-    height: auto;
-    margin: 20px 0; /* Ajustamos el margen */
-}
-
-h2 {
-    color: indigo;
-    text-align: center;
-    margin: 20px 0; /* Ajustamos el margen */
-}
 
 .logo_whatsapp {
     width: 100px;
@@ -64,19 +65,24 @@ h2 {
     bottom: 10px; /* Ajustamos la posición */
 }
 
+
 /*Estilo de pantalla con media*/      
-
-@media (max-width: 350px) {  
-.todo {
-        width: 100%; /* Ajustamos el ancho */
-        padding: 0 20px; /* Añadimos relleno a los lados */
-    }
-
-    .lista {
-        justify-content: center; /* Centramos horizontalmente la lista */
-    }
-
-    .imagen {
-        width: 100%; /*la imagen ocupe todo el ancho disponible */
+@media (min-width: 1200px) {
+    .todo {
+        padding: 0 100px; /* Por ejemplo, establece un relleno mayor en pantallas muy grandes */
     }
 }
+@media (max-width: 350px) {  
+    .todo {
+            width: 100%; /* Ajustamos el ancho */
+            padding: 0 20px; /* Añadimos relleno a los lados */
+        }
+    
+        .lista {
+            justify-content: center; /* Centramos horizontalmente la lista */
+        }
+    
+        .imagen {
+            width: 100%; /*la imagen ocupe todo el ancho disponible */
+        }
+    }

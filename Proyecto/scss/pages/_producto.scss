@@ -24,30 +24,8 @@
     color: aliceblue;
 }
 
-.principal header{
-    background-color:blanchedalmond;
-    padding: 1rem;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-}
-    
-.hederli{
-  display: grid;
-  grid-template-columns: repeat(20, 10fr);
-  grid-template-rows: 40px;
-  text-decoration:black;
-  color:blanchedalmond;
-  justify-items:center;
-  padding: 1rem;
-
-    }
 
   
-
-
-  
-    
 
     
 
@@ -120,10 +98,6 @@
     
 }
 
-.footer-empresa{
-    text-align: center;
-  
-  }
   
 
   /* Media queries para hacer el diseño responsive */

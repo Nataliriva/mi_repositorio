@@ -19,14 +19,13 @@
     height: 100vh; /* Centrar verticalmente */
 }
 
-.contactofooter {
-    text-align: center;
-    text-decoration: none;
-    color: indigo;
-    margin-top: 50px; /* colocamos un margen superior para separar el pie de página del resto del contenido */
+
+
+@media (min-width: 1200px) {
+    .cuerpo {
+        padding: 0 100px; 
+    }
 }
-
-
 @media (max-width: 350px) {
     .cuerpo {
         padding: 0 20px; /* Añadido relleno a los lados para evitar que el contenido se pegue al borde de la pantalla */

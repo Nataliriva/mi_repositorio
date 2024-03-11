@@ -1,4 +1,17 @@
 @charset "UTF-8";
+/*Estilo de pantalla con media*/
+@media (max-width: 350px) {
+  .todo {
+    width: 100%; /* Ajustamos el ancho */
+    padding: 0 20px; /* Añadimos relleno a los lados */
+  }
+  .lista {
+    justify-content: center; /* Centramos horizontalmente la lista */
+  }
+  .imagen {
+    width: 100%; /*la imagen ocupe todo el ancho disponible */
+  }
+}
 .resaltar {
   color: black;
 }
@@ -10,7 +23,7 @@ h1 {
 }
 
 .fondo {
-  background-color: cadetblue;
+  background-color: cornflowerblue;
 }
 
 .lista {
@@ -27,11 +40,6 @@ header ul {
   gap: 30px;
 }
 
-.des {
-  color: black;
-  text-align: center;
-}
-
 .todo {
   width: 80%; /* Ancho del contenedor principal */
   max-width: 1200px; /* Ancho máximo para pantallas grandes */
@@ -42,14 +50,16 @@ header ul {
   align-items: center;
   height: 100%; /* Centrar verticalmente */
 }
-
-.imagen {
+.todo .des {
+  color: black;
+  text-align: center;
+}
+.todo .imagen {
   max-width: 100%; /* para  que la imagen no se desborde */
   height: auto;
   margin: 20px 0; /* Ajustamos el margen */
 }
-
-h2 {
+.todo h2 {
   color: indigo;
   text-align: center;
   margin: 20px 0; /* Ajustamos el margen */
@@ -65,6 +75,11 @@ h2 {
 }
 
 /*Estilo de pantalla con media*/
+@media (min-width: 1200px) {
+  .todo {
+    padding: 0 100px; /* Por ejemplo, establece un relleno mayor en pantallas muy grandes */
+  }
+}
 @media (max-width: 350px) {
   .todo {
     width: 100%; /* Ajustamos el ancho */
@@ -103,24 +118,6 @@ ol {
   border: 2px solid black;
   border-radius: 50px;
   color: aliceblue;
-}
-
-.principal header {
-  background-color: blanchedalmond;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hederli {
-  display: grid;
-  grid-template-columns: repeat(20, 10fr);
-  grid-template-rows: 40px;
-  text-decoration: black;
-  color: blanchedalmond;
-  justify-items: center;
-  padding: 1rem;
 }
 
 .portada {
@@ -180,10 +177,6 @@ ol {
   gap: 1rem;
 }
 
-.footer-empresa {
-  text-align: center;
-}
-
 /* Media queries para hacer el diseño responsive */
 @media screen and (max-width: 768px) {
   .portada img,
@@ -223,13 +216,11 @@ ol {
   height: 100vh; /* Centrar verticalmente */
 }
 
-.contactofooter {
-  text-align: center;
-  text-decoration: none;
-  color: indigo;
-  margin-top: 50px; /* colocamos un margen superior para separar el pie de página del resto del contenido */
+@media (min-width: 1200px) {
+  .cuerpo {
+    padding: 0 100px;
+  }
 }
-
 @media (max-width: 350px) {
   .cuerpo {
     padding: 0 20px; /* Añadido relleno a los lados para evitar que el contenido se pegue al borde de la pantalla */
@@ -268,14 +259,6 @@ ol {
   background-color: lightblue;
 }
 
-heder-empresa {
-  background-color: blanchedalmond;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .portada {
   display: flex;
   justify-content: center;
@@ -307,6 +290,14 @@ heder-empresa {
   margin-top: 50px;
 }
 
+@media (min-width: 1200px) {
+  .portada {
+    padding: 0 100px; /* Por ejemplo, establece un relleno mayor en pantallas muy grandes */
+  }
+  img {
+    padding: 0 100px;
+  }
+}
 @media screen and (max-width: 350px) {
   .portada {
     flex-direction: column;

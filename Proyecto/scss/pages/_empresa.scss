@@ -14,14 +14,8 @@
   
   .body-empresa{
     background-color:lightblue;
- }
- heder-empresa{
-  background-color:blanchedalmond;
-  padding: 1rem;
-  display: flex;
-  justify-content:center;
-  align-items: center;
 }
+
   
 
 .portada{
@@ -58,6 +52,14 @@
   }
 
 // Media queries para tamaños de pantalla específicos
+@media (min-width: 1200px) {
+  .portada {
+      padding: 0 100px; /* Por ejemplo, establece un relleno mayor en pantallas muy grandes */
+  }
+  img {
+    padding: 0 100px;
+}
+}
 @media screen and (max-width: 350px) {
   .portada {
     flex-direction: column; // Cambia la dirección de los elementos en pantallas más pequeñas
