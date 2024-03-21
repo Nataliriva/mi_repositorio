@@ -72,12 +72,13 @@
     @include flex-centar(); 
   }
 
-  .zinc {
+  .zinc-material {
     width: 135%;
     justify-content:top;
    
 
       img {
+        
           width: 100%;
           height: 180px;
           display: flex;

@@ -13,24 +13,39 @@
   }
   
   .body-empresa{
-    background-color:lightblue;
+    background-color:black;
 }
 
   
 
 .portada{
     display: flex;
-    
+    justify-content: center;
     align-items: center;
     min-height: 80vh;
-    .imagenzeta{
-        width: 135%;
-        justify-content:top; 
-
+    
+  
+    .imagenzeta-container {
+      width: 60%; // Ancho deseado para la imagen de ZETA TEC
+      display: flex;
+      justify-content: center; // Centra horizontalmente
+      align-items: center;
+     
+    
     }
-    .Imagenchapa{
-      width: 85%;
+    
+    .imagenzeta {
+      width: 70%; // La imagen ocupa todo el ancho del contenedor
+      height: auto; // Mantenemos la relación de aspecto
+      margin-top: -120px;
     }
+    
+    .Imagenchapa {
+      width: 100%; // La imagen ocupa todo el ancho del contenedor
+      height: auto;
+      
+    }
+    
     div{
         width: 40%;
         display: flex;
@@ -42,7 +57,7 @@
 
 .Historia{
   text-align:center;
-  color: black;
+  color:white;
   font-weight: 5px;
   gap: 1rem;
   
@@ -51,9 +66,18 @@
 .footer-empresa{
   text-align: center;
     text-decoration: none;
-    color: indigo;
+    color:beige;
     margin-top:50px;
   }
+
+  .logo_whatsapp {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    position: fixed; /* Mantenemos la posición fija */
+    right: 10px; /* Ajustamos la posición */
+    bottom: 10px; /* Ajustamos la posición */
+}
 
 // Media queries para tamaños de pantalla específicos
 @media (min-width: 1200px) {

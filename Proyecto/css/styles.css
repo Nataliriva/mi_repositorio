@@ -155,16 +155,16 @@ ol {
   text-align: center;
   padding: 3rem;
 }
-.cajadeproductos .zinc {
+.cajadeproductos .zinc-material {
   width: 135%;
   justify-content: top;
 }
-.cajadeproductos .zinc img {
+.cajadeproductos .zinc-material img {
   width: 100%;
   height: 180px;
   display: flex;
 }
-.cajadeproductos .zinc div {
+.cajadeproductos .zinc-material div {
   border-top: 2px;
   display: flex;
   flex-direction: column;
@@ -214,6 +214,15 @@ ol {
   height: 100vh; /* Centrar verticalmente */
 }
 
+.logo_whatsapp {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+  position: fixed; /* Mantenemos la posición fija */
+  right: 10px; /* Ajustamos la posición */
+  bottom: 10px; /* Ajustamos la posición */
+}
+
 @media (min-width: 1200px) {
   .cuerpo {
     padding: 0 100px;
@@ -254,20 +263,29 @@ ol {
 }
 
 .body-empresa {
-  background-color: lightblue;
+  background-color: black;
 }
 
 .portada {
   display: flex;
+  justify-content: center;
   align-items: center;
   min-height: 80vh;
 }
+.portada .imagenzeta-container {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .portada .imagenzeta {
-  width: 135%;
-  justify-content: top;
+  width: 70%;
+  height: auto;
+  margin-top: -120px;
 }
 .portada .Imagenchapa {
-  width: 85%;
+  width: 100%;
+  height: auto;
 }
 .portada div {
   width: 40%;
@@ -279,7 +297,7 @@ ol {
 
 .Historia {
   text-align: center;
-  color: black;
+  color: white;
   font-weight: 5px;
   gap: 1rem;
 }
@@ -287,8 +305,17 @@ ol {
 .footer-empresa {
   text-align: center;
   text-decoration: none;
-  color: indigo;
+  color: beige;
   margin-top: 50px;
+}
+
+.logo_whatsapp {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+  position: fixed; /* Mantenemos la posición fija */
+  right: 10px; /* Ajustamos la posición */
+  bottom: 10px; /* Ajustamos la posición */
 }
 
 @media (min-width: 1200px) {
@@ -324,61 +351,63 @@ ol {
     font-size: 12px;
   }
 }
-
-/*Materiales*/
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-}
-
-header h1 {
-  margin: 0;
+  background-color: black;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
 }
-
 nav ul li {
   display: inline;
   margin-right: 20px;
 }
-
 nav ul li a {
   color: #fff;
-  text-decoration: none;
 }
 
 main {
   padding: 20px;
 }
+main section {
+  margin-bottom: 40px;
+}
+main section h2 {
+  color: #fff;
+}
 
 section {
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
 }
-
 section h2 {
-  color: #333;
-}
-
-footer {
-  
   color: #fff;
-  text-align: center;
-  padding: 20px;
+  align-self: center;
+  max-width: 100%;
+  height: 80px;
+  margin-bottom: 10px;
 }
-
-
-
-
+section p {
+  margin-bottom: 5px;
+  color: #fff;
+  align-self: center;
+  max-width: 100%;
+  height: 80px;
+}
+section img {
+  align-self: center;
+  max-width: 100%;
+  height: 180px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+section img:hover {
+  transform: scale(1.1);
+}
 
 /*# sourceMappingURL=styles.css.map */
