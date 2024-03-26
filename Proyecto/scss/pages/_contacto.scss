@@ -1,11 +1,13 @@
-/* Apartir de aca comienza la pagina de Contacto*/
+.active {
+    color:aquamarine; 
+}
 
 .contactobody {
     background-color: rgb(165, 187, 228);
 }
 
 .titulocontacto {
- $color_primario:indigo
+ color:$color-primario;
 }
 
 .cuerpo {

@@ -1,4 +1,7 @@
 $color-primario: #fff;
+.active {
+  color:aquamarine; 
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -25,9 +28,13 @@ body {
   
   main {
     padding: 20px;
-  
+
+    
     section {
       margin-bottom: 40px;
+      h1{
+        color:$color-primario ;
+      }
   
       h2 {
         color:$color-primario
